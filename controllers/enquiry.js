@@ -11,10 +11,11 @@ const createEnquiry = async (req, res) => {
         status: 'Enquired',
         budget: '',
         config: '',
-        location: ''
+        location: '',
+        subStatus: ''
     }
 
-    console.log('asdfasdf', enquiry)
+    //console.log('asdfasdf', enquiry)
 
     const newEnquiry = new EnquirySchema(enquiry)
     try {
