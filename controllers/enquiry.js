@@ -17,7 +17,7 @@ export const createEnquiry = async (req, res) => {
     status: "Enquired",
     budget: "",
     config: "",
-    location: "",
+    location: [],
     subStatus: "",
     assignedTo: "Aditya",
   };

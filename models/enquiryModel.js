@@ -17,7 +17,7 @@ const enquirySchema = mongoose.Schema({
   subStatus: String,
   budget: String,
   config: String,
-  location: String,
+  location: [],
   createdAt: {
     type: Date,
     default: new Date(),
