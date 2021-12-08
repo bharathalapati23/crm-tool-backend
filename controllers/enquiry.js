@@ -45,7 +45,6 @@ export const getEnquiries = async (req, res) => {
 
 export const getSingleEnquiry = async (req, res) => {
   let objId = req.query.objId;
-  console.log("####################################");
   try {
     let listing = [];
     listing = await EnquirySchema.find({ _id: ObjectId(objId) });
