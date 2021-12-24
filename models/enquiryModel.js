@@ -5,6 +5,7 @@ const enquirySchema = mongoose.Schema({
   phoneNumber: String,
   comment: [
     {
+      changedBy: String,
       comment: String,
       statusChange: String,
       assingedChange: String,
