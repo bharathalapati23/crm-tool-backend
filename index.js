@@ -17,12 +17,12 @@ app.use(cors());
 
 app.use("/enquiry", enquiryRoutes);
 
-const CONNECTION_URL =
-  "mongodb+srv://manipalRentals:mkQmu6yBScBqDOFa@cluster0.gz5zj.mongodb.net/prod?authSource=admin&replicaSet=atlas-uoe2d6-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
-const PORT = process.env.PORT || 5000;
 // const CONNECTION_URL =
-//   "mongodb+srv://manipalRentals:mkQmu6yBScBqDOFa@cluster0.gz5zj.mongodb.net/test?authSource=admin&replicaSet=atlas-uoe2d6-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
+//   "mongodb+srv://manipalRentals:mkQmu6yBScBqDOFa@cluster0.gz5zj.mongodb.net/prod?authSource=admin&replicaSet=atlas-uoe2d6-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
 // const PORT = process.env.PORT || 5000;
+const CONNECTION_URL =
+  "mongodb+srv://manipalRentals:mkQmu6yBScBqDOFa@cluster0.gz5zj.mongodb.net/test?authSource=admin&replicaSet=atlas-uoe2d6-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true";
+const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })

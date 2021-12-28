@@ -7,6 +7,7 @@ export const createEnquiry = async (req, res) => {
     phoneNumber: req.body.phoneNo,
     comment: [
       {
+        changedBy: req.body.changedBy,
         comment: "Initiated",
         statusChange: "",
         assingedChange: "",
@@ -68,6 +69,7 @@ export const addComment = async (req, res) => {
               comment: req.body.comment,
               statusChange: req.body.status,
               updated: req.body.updated,
+              changedBy: req.body.changedBy,
             },
           },
           $set: {
